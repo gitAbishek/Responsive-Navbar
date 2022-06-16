@@ -1,0 +1,274 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.navbar{
+  width:100%;
+  height:8rem;
+  display:grid;
+  grid-template-columns: 1fr 2.5fr 0.5fr;
+  grid-template-rows: 1fr;
+  background-color: black;
+  color:white;
+  position: fixed;
+}
+
+.navbar .logo{
+  margin-left: 8rem;
+  line-height: 8rem;
+}
+
+.navbar .logo .logo_title{
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar .nav .desktop_nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  line-height: 8rem;
+  
+  
+}
+
+.navbar .nav .desktop_nav .a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0rem 1.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar .nav .desktop_nav .a:hover{
+  color:crimson;
+}
+
+.activee{
+  color: rgb(2, 18, 16);
+}
+
+.navbar .social_media{
+  display: flex;
+  justify-content: space-around;
+  line-height: 8rem;
+}
+
+.navbar .social_media .social_menu{
+  display: flex;
+  margin: 0rem 2rem;
+}
+
+.navbar .social_media .social_menu li{
+  list-style: none;
+  padding: 0rem 1rem;
+}
+
+.navbar .social_media .social_menu .aa{
+  font-size: 2rem;
+  color:white;
+}
+
+.navbar .social_media .social_menu .aa:hover{
+  color:red;
+}
+
+
+.home{
+  width:100%;
+  height:95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about{
+  width:100%;
+  height:95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact{
+  width:100%;
+  height:95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services{
+  width:100%;
+  height:95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project{
+  width:100%;
+  height:95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 3rem;
+}
+.navbar .social_media .hambergermenu{
+  display: none;
+  color:white;
+  font-size: 4rem;
+  line-height: 8rem;
+}
+
+.navbar .social_media .hambergermenu:hover{
+  cursor: pointer;
+}
+
+
+@media(max-width:1080px){
+  html{
+    font-size: 62.5%;
+  }
+ 
+  .navbar .social_media .social_menu{
+    display: none;
+  }
+  
+}
+
+
+@media(max-width:980px){
+  html{
+    font-size: 50%;
+  }
+}
+
+
+
+
+@media(max-width:780px){
+  html{
+    font-size: 45%;
+  }
+
+  .navbar .nav .desktop_nav{
+    display: none;
+  }
+
+  .navbar{
+    display:grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .navbar .menu .desktop_nav{
+    display:none;
+  }
+   
+  .navbar .nav .mobile_nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    list-style: none;
+    
+  }
+  .navbar .nav .mobile_nav li{
+    padding: 0rem 0rem;
+  }
+  .navbar .nav .mobile_nav .a{
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(45, 38, 112);
+  }
+
+  .navbar .nav .mobile_nav .a:hover{
+    color:red;
+  }
+
+  .navbar .logo .logo_title{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .navbar .social_media .hambergermenu{
+    display: flex;
+    color:white;
+    font-size: 4rem;
+    line-height: 8rem;
+    margin-left: 5rem;
+  }
+
+  .navbar .social_media .hambergermenu .ham_icon{
+    color:white;
+  }
+}
+
+@media(max-width:560px){
+  html{
+    font-size: 40%;
+  }
+
+  .navbar .nav .desktop_nav{
+    display: none;
+  }
+  
+
+  .navbar{
+    display:grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .navbar .social_media .hambergermenu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: column-end;
+   
+  }
+
+  .navbar .social_media .hambergermenu .ham_icon{
+    color:white;
+    padding-left: 12rem;
+  }
+
+  .navbar .logo{
+    display:flex;
+  }
+
+  .navbar .nav .mobile_nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    list-style: none;
+    
+  }
+  .navbar .nav .mobile_nav li{
+    padding: 0rem 0rem;
+  }
+  .navbar .nav .mobile_nav .a{
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(45, 38, 112);
+  }
+
+  .navbar .nav .mobile_nav .a:hover{
+    color:red;
+  }
+
+}
